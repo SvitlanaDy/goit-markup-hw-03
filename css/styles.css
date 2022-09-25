@@ -21,9 +21,9 @@ body {
 }
 .header {
     background: var(--main-white-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
-    border-box: 1px  var(--btn-cover-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
+    
 
 }
 .list{
@@ -60,6 +60,8 @@ button {
 
   img {
     display: block;
+    max-width: 100%;
+    height: auto;
   }
 
   a {
@@ -68,14 +70,16 @@ button {
   }
 /*------------------------Header---------------*/
 
-
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;}
  /*-----Creating main container*/
 
  .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid red;
+    
     margin:0 auto;
 }
 
@@ -117,6 +121,7 @@ button {
 .header-container{
    display:flex; 
    align-items: center;
+   border-bottom: 1px #ECECEC;
 }
 
 .header-adress{
@@ -130,7 +135,11 @@ button {
     gap: 18px; 
 }
 
-.header-item{}
+.header-item{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;}
+
 .header-link{
 font-weight: 500;
 font-size: 14px;
@@ -141,12 +150,16 @@ padding-top: 24px;
 padding-bottom: 25px;
 }
 
+   
+
 .header-email{
 font-weight: 500;
 font-size: 14px;
 line-height:var(--typical-line-height);
 letter-spacing: 0.02em;
 color: var(--Main-text-color);
+padding-top: 24px;
+padding-bottom: 25px;
 }
 
 .header-tel{
@@ -155,47 +168,45 @@ font-size: 14px;
 line-height: var(--typical-line-height);
 letter-spacing: 0.02em;
 color: var(--Main-text-color);
+padding-top: 24px;
+padding-bottom: 25px;
 }
 
 /* ------------------HERO---------------------- */
 .hero{
-    
-    display: block; 
-    margin-left:auto;
-    margin-right:auto;
-    
+    display:block;
+    text-align: center;
+    background: var(--main-background-color);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 452px;
+    padding-right: 452px;
    
+    
 }
 
 .hero-title{
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: var(--main-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-white-color);
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    }
 
-min-width: 696px;
-
-
-
-}
-
-
-    
-
-.hero-container{
-    background: var(--main-background-color);
-    flex-grow:0;
-    text-align: center; 
-    padding-top: 200px;
-    padding-bottom: 280px;
-    padding-left: 452px;
-    padding-right: 452px;
-
-  
-}
+.title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);}
 
 
 .hero-btn{
@@ -211,7 +222,7 @@ min-width: 696px;
     border-color: transparent;
     border-radius: 4px;
    box-sizing: border-box;
-   
+   padding:10px 32px;
   
 }
 
@@ -220,7 +231,9 @@ min-width: 696px;
     height: 50px;
     padding: 350px 692px 200px 692px;
     margin:0 auto;
-    display:block;
+    display:flex;
+    justify-content: center;
+    min-width: 216px;
     
     background-color:rgba(0, 0, 0, 0.15);
 
@@ -231,24 +244,23 @@ min-width: 696px;
 .hero-btn:focus{
     background-color: var(--btn-cover-color);
 }
-.title{
-font-weight: 700;
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--main-title-color);
 
-}
+
+
 /*----------------------- Adventages ------------------*/
 
 .adventages{
+  
 
+   
 }
 .adventages-list{
+    
     display:flex;
     justify-content:center;
-    
+    padding-top: 94px;
+    padding-bottom: 94px;
+
    
 }
 .adventages-item{
@@ -277,27 +289,30 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--Main-text-color);
-border:1px solid blue;
+
 
 }
 .adventages-text{
 min-width: 270px;
-height: 72px;
+
 padding-top:26px;
 padding-bottom:24px;
 margin-top: 10px;
 }
 /* ----------------What we do----------------------- */
 .what-we-do{
+   
 
 }
 .what-we-do-title{
-    margin-bottom: 50px;
+  
 }
 
 .what-we-do-list{
     display: flex;
     gap:30px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .what-we-do-item{
@@ -319,7 +334,8 @@ margin-top: 10px;
 .team-list{
     display: flex;
     gap:30px;
-    
+    padding-top: 94px;
+    padding-bottom: 94px;
 
 }
 .team-item{
@@ -386,9 +402,10 @@ color: var(--Main-text-color);
     justify-content:center;
     gap:8px;
     min-width: 575px;
+    margin-bottom: 54px;
 }
 .examples-items{
-    
+    border:1px ;
 }
 
 .about-button-examples{
@@ -414,10 +431,7 @@ padding:6px 22px;
  cursor: pointer;
  }
 
-.examples-list{
-    margin-top: 94px;
-    margin-bottom:50px;
-}
+
 
 .examples-list{
     display:flex;
@@ -452,6 +466,13 @@ color: var(--Main-text-color);
 
 .footer-logo{
 font-style: normal;
+
+
+}
+.footer .footer-logo{
+    padding-top: 60px;;
+    padding-bottom: 161px;
+
 }
 .footer-logo-web{
 color: var(--logoweb-color);
@@ -498,4 +519,15 @@ color: var(--main-footer-adress-color);
   .footer-tel:hover,
   .footer-tel:focus{
    color:  var(--main-hover-color);
+  }
+  .footer-container{
+    padding-top:111px;
+        padding-bottom: 60px;
+  }
+    .footer-adress{
+        display:block;
+        gap: 18px; 
+        margin-top:20px;
+        min-width: 231px;
+        
   }
