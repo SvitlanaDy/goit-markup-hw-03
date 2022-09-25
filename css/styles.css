@@ -1,7 +1,7 @@
 body {
     font-family:'Roboto', sans-serif;
     background-color: var(--main-white-color);
-    color: var: (var(--main-title-color));
+    color: var (var(--main-title-color));
 }
 
 :root{
@@ -17,25 +17,77 @@ body {
     --btn-cover-color:#188CE8;
     --typical-line-height: 1.14;
     --main-font: 'Roboto', sans-serif;
+   
 }
 .header {
     background: var(--main-white-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-box: 1px  var(--btn-cover-color);
+
 }
 .list{
 list-style:none;
 }
 .link {
 text-decoration: none;}
+/*----------------Reset old margins/paddings------------*/
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+    cursor: pointer;
+  }
+  
+  address {
+    font-style: normal;
+  }
+
+  img {
+    display: block;
+  }
+
+  a {
+    color: var(--Main-text-color) ;
+    text-decoration: none;
+  }
 /*------------------------Header---------------*/
 
+
+ /*-----Creating main container*/
+
+ .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid red;
+    margin:0 auto;
+}
+
+/*-------------------css text---------------*/
   .logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color:var(--main-black-color)
+    color:var(--main-black-color);
+    margin-right: 93px;
   }
 
 .header-logo-web{
@@ -58,9 +110,26 @@ text-decoration: none;}
     color:var(--main-hover-color)
 }
 
+.header-navigation{
+  display:flex;  
+  align-items: center;
+}
+.header-container{
+   display:flex; 
+   align-items: center;
+}
 
-.header-adress{}
-.header-list{}
+.header-adress{
+    display:flex; 
+    align-items: center;
+    margin-left: auto;
+    gap: 18px;
+}
+.header-list{
+    display:flex;
+    gap: 18px; 
+}
+
 .header-item{}
 .header-link{
 font-weight: 500;
@@ -68,6 +137,8 @@ font-size: 14px;
 line-height:var(--typical-line-height);
 letter-spacing: 0.02em;
 color:var(--main-title-color);
+padding-top: 24px;
+padding-bottom: 25px;
 }
 
 .header-email{
@@ -88,7 +159,12 @@ color: var(--Main-text-color);
 
 /* ------------------HERO---------------------- */
 .hero{
-    background: var(--main-background-color); 
+    
+    display: block; 
+    margin-left:auto;
+    margin-right:auto;
+    
+   
 }
 
 .hero-title{
@@ -99,7 +175,28 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--main-white-color);
+
+min-width: 696px;
+
+
+
 }
+
+
+    
+
+.hero-container{
+    background: var(--main-background-color);
+    flex-grow:0;
+    text-align: center; 
+    padding-top: 200px;
+    padding-bottom: 280px;
+    padding-left: 452px;
+    padding-right: 452px;
+
+  
+}
+
 
 .hero-btn{
     font-family: inherit;
@@ -113,7 +210,23 @@ color: var(--main-white-color);
     background-color: var(--main-hover-color);
     border-color: transparent;
     border-radius: 4px;
+   box-sizing: border-box;
+   
+  
 }
+
+.button{
+    min-width: 216px;
+    height: 50px;
+    padding: 350px 692px 200px 692px;
+    margin:0 auto;
+    display:block;
+    
+    background-color:rgba(0, 0, 0, 0.15);
+
+}
+
+
 .hero-btn:hover,
 .hero-btn:focus{
     background-color: var(--btn-cover-color);
@@ -125,12 +238,29 @@ line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--main-title-color);
+
 }
 /*----------------------- Adventages ------------------*/
 
-.adventages{}
-.adventages-list{}
-.adventages-item{}
+.adventages{
+
+}
+.adventages-list{
+    display:flex;
+    justify-content:center;
+    
+   
+}
+.adventages-item{
+    
+    max-width: 270px;
+   
+}
+.adventages-list .adventages-item + .adventages-item{
+    margin-left: 30px;
+}
+
+
 .adventages-item-title{
 font-weight: 700;
 font-size: 14px;
@@ -138,6 +268,8 @@ line-height: var(--typical-line-height);
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--main-title-color);
+min-width: 270px;
+height: 16px;
 }
 
 .adventages-text{
@@ -145,27 +277,58 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--Main-text-color);
+border:1px solid blue;
+
+}
+.adventages-text{
+min-width: 270px;
+height: 72px;
+padding-top:26px;
+padding-bottom:24px;
+margin-top: 10px;
 }
 /* ----------------What we do----------------------- */
-.what-we-do{}
+.what-we-do{
+
+}
 .what-we-do-title{
+    margin-bottom: 50px;
 }
 
-.what-we-do-list{}
-.what-we-do-item{}
+.what-we-do-list{
+    display: flex;
+    gap:30px;
+}
+
+.what-we-do-item{
+   
+}
 .what-we-do-imagine{}
 
 /* ----------------------Our team --------------------*/
 .team{
     background-color: var(--second-background-color);
+    flex-grow: 1;
 }
+
 .team-title{
+    margin-bottom: 50px;
+   
+    
 }
-.team-list{}
+.team-list{
+    display: flex;
+    gap:30px;
+    
+
+}
 .team-item{
     background-color: var(--main-white-color);
+    width: calc(100%-90px)/4;
 }
-.team-picture{}
+.team-picture{
+  
+}
 .team-item-title{
 font-weight: 500;
 font-size: 16px;
@@ -173,6 +336,7 @@ line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
 color:var(--main-title-color);
+margin-bottom: 10px;
 }
 
 .team-text{
@@ -181,6 +345,13 @@ line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--Main-text-color);
+}
+
+.team-item-content{
+    
+    
+    
+
 }
 
 /*--------------Portfolio---------------------------*/
@@ -198,8 +369,27 @@ color: var(--Main-text-color);
     margin: -1px;
   }
 
-.examples{}
-.examples-items{}
+.examples{
+   
+}
+
+
+.example-button-container{
+  
+   
+   
+    
+  
+}
+.examples-buttons{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    min-width: 575px;
+}
+.examples-items{
+    
+}
 
 .about-button-examples{
 font-family: inherit;
@@ -212,6 +402,9 @@ color: var(--main-title-color);
 background-color:var(--second-background-color);
 border-color: transparent;
 border-radius: 4px;
+min-width: 73px;
+height: 38px;
+padding:6px 22px;
 }
 
 .about-button-examples:hover,
@@ -221,9 +414,21 @@ border-radius: 4px;
  cursor: pointer;
  }
 
-.examples-list{}
- 
+.examples-list{
+    margin-top: 94px;
+    margin-bottom:50px;
+}
 
+.examples-list{
+    display:flex;
+    flex-wrap:wrap;
+     gap: 30px;
+}
+ 
+.examples-item{
+    width: (100%-60px)/3;
+   
+}
 .examples-spots-titles{
     color:var(--main-title-color);
     font-weight: 700;
