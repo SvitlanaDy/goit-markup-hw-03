@@ -68,8 +68,7 @@ button {
 /*------------------------Header---------------*/
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;}
+}
 
  /*-----Creating main container*/
 
@@ -299,7 +298,7 @@ margin-top: 10px;
 }
 /* ----------------What we do----------------------- */
 .what-we-do{
-    padding-top: 47px;
+    padding-top:47px;
     padding-bottom: 94px;  
 
 }
