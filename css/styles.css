@@ -20,7 +20,8 @@ body {
    
 }
 .header { 
-
+border-bottom: 1px Solid
+#ECECEC;
 }
 .list{
 list-style:none;
@@ -125,14 +126,15 @@ button {
     display:flex; 
     align-items: center;
     margin-left: auto;
-    gap: 18px;
+   
 }
 .header-list{
     display:flex;
-    gap: 18px; 
+     
 }
 
 .header-item{
+    margin-left: 50px;
     }
 
 .header-link{
@@ -154,8 +156,11 @@ font-size: 14px;
 line-height:var(--typical-line-height);
 letter-spacing: 0.02em;
 color: var(--Main-text-color);
+display:block;
 padding-top: 32px;
 padding-bottom: 32px;
+margin-right: 50px;
+
 }
 
 .header-tel{
@@ -164,6 +169,7 @@ font-size: 14px;
 line-height: var(--typical-line-height);
 letter-spacing: 0.02em;
 color: var(--Main-text-color);
+display:block;
 padding-top: 32px;
 padding-bottom: 32px;
 }
@@ -216,7 +222,7 @@ padding-bottom: 32px;
     background-color: var(--main-hover-color);
     border-color: transparent;
     border-radius: 4px;
-   box-sizing: border-box;
+   
    padding:10px 32px;
   
 }
@@ -247,7 +253,7 @@ padding-bottom: 32px;
 .adventages{
   
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 47px;
    
 }
 .adventages-list{
@@ -293,7 +299,7 @@ margin-top: 10px;
 }
 /* ----------------What we do----------------------- */
 .what-we-do{
-    padding-top: 94px;
+    padding-top: 47px;
     padding-bottom: 94px;  
 
 }
@@ -433,7 +439,7 @@ padding:6px 22px;
 
 .examples-text-content{
     
- padding: 54px 24px;
+ padding: 20px 24px;
  border-bottom: 1px solid #EEEEEE; 
  border-left: 1px solid #EEEEEE; 
  border-right: 1px solid #EEEEEE; 
@@ -446,6 +452,7 @@ padding:6px 22px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom:4px;
 
 }
 .examples-spots-text{
@@ -524,6 +531,6 @@ color: var(--main-footer-adress-color);
     .footer-adress{
         margin-top:20px; 
   }
-  .footer-adress-mailtelgoogl{
+  .footer-adress-mailtelgoogl:not(:last-child){
     margin-bottom: 9px;
   }
