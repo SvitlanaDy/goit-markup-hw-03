@@ -19,11 +19,7 @@ body {
     --main-font: 'Roboto', sans-serif;
    
 }
-.header {
-    background: var(--main-white-color);
-    padding-top: 24px;
-    padding-bottom: 25px;
-    
+.header { 
 
 }
 .list{
@@ -73,6 +69,7 @@ button {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;}
+
  /*-----Creating main container*/
 
  .container {
@@ -136,9 +133,7 @@ button {
 }
 
 .header-item{
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;}
+    }
 
 .header-link{
 font-weight: 500;
@@ -146,8 +141,9 @@ font-size: 14px;
 line-height:var(--typical-line-height);
 letter-spacing: 0.02em;
 color:var(--main-title-color);
-padding-top: 24px;
-padding-bottom: 25px;
+padding-top: 32px;
+padding-bottom: 32px;
+display: block;
 }
 
    
@@ -158,8 +154,8 @@ font-size: 14px;
 line-height:var(--typical-line-height);
 letter-spacing: 0.02em;
 color: var(--Main-text-color);
-padding-top: 24px;
-padding-bottom: 25px;
+padding-top: 32px;
+padding-bottom: 32px;
 }
 
 .header-tel{
@@ -168,8 +164,8 @@ font-size: 14px;
 line-height: var(--typical-line-height);
 letter-spacing: 0.02em;
 color: var(--Main-text-color);
-padding-top: 24px;
-padding-bottom: 25px;
+padding-top: 32px;
+padding-bottom: 32px;
 }
 
 /* ------------------HERO---------------------- */
@@ -181,8 +177,7 @@ padding-bottom: 25px;
     margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
-    padding-left: 452px;
-    padding-right: 452px;
+  
    
     
 }
@@ -251,15 +246,15 @@ padding-bottom: 25px;
 
 .adventages{
   
-
+    padding-top: 94px;
+    padding-bottom: 94px;
    
 }
 .adventages-list{
     
     display:flex;
     justify-content:center;
-    padding-top: 94px;
-    padding-bottom: 94px;
+   
 
    
 }
@@ -294,25 +289,22 @@ color: var(--Main-text-color);
 }
 .adventages-text{
 min-width: 270px;
-
-padding-top:26px;
-padding-bottom:24px;
 margin-top: 10px;
 }
 /* ----------------What we do----------------------- */
 .what-we-do{
-   
+    padding-top: 94px;
+    padding-bottom: 94px;  
 
 }
 .what-we-do-title{
-  
+    margin-bottom: 50px;
 }
 
 .what-we-do-list{
     display: flex;
     gap:30px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+   
 }
 
 .what-we-do-item{
@@ -323,7 +315,8 @@ margin-top: 10px;
 /* ----------------------Our team --------------------*/
 .team{
     background-color: var(--second-background-color);
-    flex-grow: 1;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-title{
@@ -334,8 +327,7 @@ margin-top: 10px;
 .team-list{
     display: flex;
     gap:30px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+   
 
 }
 .team-item{
@@ -364,7 +356,7 @@ color: var(--Main-text-color);
 }
 
 .team-item-content{
-    
+   padding: 30px 10px; 
     
     
 
@@ -386,17 +378,13 @@ color: var(--Main-text-color);
   }
 
 .examples{
+    padding-top: 94px;
+    padding-bottom: 94px;
    
 }
 
 
-.example-button-container{
-  
-   
-   
-    
-  
-}
+
 .examples-buttons{
     display:flex;
     justify-content:center;
@@ -405,7 +393,7 @@ color: var(--Main-text-color);
     margin-bottom: 54px;
 }
 .examples-items{
-    border:1px ;
+   
 }
 
 .about-button-examples{
@@ -419,8 +407,7 @@ color: var(--main-title-color);
 background-color:var(--second-background-color);
 border-color: transparent;
 border-radius: 4px;
-min-width: 73px;
-height: 38px;
+
 padding:6px 22px;
 }
 
@@ -440,9 +427,19 @@ padding:6px 22px;
 }
  
 .examples-item{
-    width: (100%-60px)/3;
+
    
 }
+
+.examples-text-content{
+    
+ padding: 54px 24px;
+ border-bottom: 1px solid #EEEEEE; 
+ border-left: 1px solid #EEEEEE; 
+ border-right: 1px solid #EEEEEE; 
+
+}
+
 .examples-spots-titles{
     color:var(--main-title-color);
     font-weight: 700;
@@ -462,6 +459,8 @@ color: var(--Main-text-color);
 /* ----------------------Footer----------------- */
 .footer{
     background: var(--main-background-color);
+    padding-top:60px;
+     padding-bottom: 60px;
 }
 
 .footer-logo{
@@ -470,8 +469,7 @@ font-style: normal;
 
 }
 .footer .footer-logo{
-    padding-top: 60px;;
-    padding-bottom: 161px;
+
 
 }
 .footer-logo-web{
@@ -521,13 +519,11 @@ color: var(--main-footer-adress-color);
    color:  var(--main-hover-color);
   }
   .footer-container{
-    padding-top:111px;
-        padding-bottom: 60px;
+    
   }
     .footer-adress{
-        display:block;
-        gap: 18px; 
-        margin-top:20px;
-        min-width: 231px;
-        
+        margin-top:20px; 
+  }
+  .footer-adress-mailtelgoogl{
+    margin-bottom: 9px;
   }
